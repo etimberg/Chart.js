@@ -1,6 +1,4 @@
----
-title: Performance
----
+# Performance
 
 Chart.js charts are rendered on `canvas` elements, which makes rendering quite fast. For large datasets or performance sensitive applications, you may wish to consider the tips below.
 
@@ -8,7 +6,7 @@ Chart.js charts are rendered on `canvas` elements, which makes rendering quite f
 
 ### Parsing
 
-Provide prepared data in the internal format accepted by the dataset and scales and set `parsing: false`. See [Data structures](data-structures.md) for more information.
+Provide prepared data in the internal format accepted by the dataset and scales, and set `parsing: false`. See [Data structures](data-structures.md) for more information.
 
 ### Data normalization
 

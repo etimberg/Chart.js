@@ -49,16 +49,6 @@ module.exports = {
       '/': [
         '',
         {
-          title: 'Getting Started',
-          children: [
-            'getting-started/',
-            'getting-started/installation',
-            'getting-started/integration',
-            'getting-started/usage',
-            'getting-started/v3-migration'
-          ]
-        },
-        {
           title: 'General',
           children: [
             'general/data-structures',
@@ -77,14 +67,7 @@ module.exports = {
             'configuration/responsive',
             'configuration/device-pixel-ratio',
             'configuration/locale',
-            {
-              title: 'Interactions',
-              children: [
-                'configuration/interactions/',
-                'configuration/interactions/events',
-                'configuration/interactions/modes'
-              ],
-            },
+            'configuration/interactions',
             'configuration/canvas-background',
             'configuration/animations',
             'configuration/layout',
@@ -127,7 +110,6 @@ module.exports = {
             {
               title: 'Radial',
               children: [
-                'axes/radial/',
                 'axes/radial/linear'
               ],
             },

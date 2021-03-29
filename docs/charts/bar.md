@@ -1,6 +1,4 @@
----
-title: Bar Chart
----
+# Bar Chart
 
 A bar chart provides a way of showing data values represented as vertical bars. It is sometimes used to show trend data, and the comparison of multiple data sets side by side.
 
@@ -237,7 +235,7 @@ It is common to want to apply a configuration setting to all created bar charts.
 
 The following shows the relationship between the bar percentage option and the category percentage option.
 
-```text
+```md
 // categoryPercentage: 1.0
 // barPercentage: 1.0
 Bar:        | 1.0 | 1.0 |
@@ -333,11 +331,6 @@ const config = {
   data,
   options: {
     indexAxis: 'y',
-    scales: {
-      x: {
-        beginAtZero: true
-      }
-    }
   }
 };
 // </block:config>
@@ -346,18 +339,6 @@ module.exports = {
   actions: [],
   config: config,
 };
-```
-
-## Example
-
-```javascript
-var myBarChart = new Chart(ctx, {
-    type: 'bar',
-    data: data,
-    options: {
-      indexAxis: 'y'
-    }
-});
 ```
 
 ### Horizontal Bar Chart config Options
