@@ -19,6 +19,7 @@ module.exports = {
         'ga': 'UA-28909194-3'
       }
     ],
+    /* COMMENTED OUT FOR SAMPLES DEV, BECAUSE KEEPS CRASHING ON HOT RELOAD
     [
       'vuepress-plugin-typedoc',
 
@@ -31,7 +32,7 @@ module.exports = {
           parentCategory: 'API',
         },
       },
-    ],
+    ],*/
   ],
   chainWebpack(config) {
     config.merge({
@@ -104,12 +105,6 @@ module.exports = {
           ]
         },
         {
-          title: 'Advanced',
-          children: [
-            'advanced/derived-axis-type',
-          ]
-        },
-        {
           title: 'Area charts',
           children: [
             'area/line-boundaries',
@@ -125,7 +120,25 @@ module.exports = {
             'linear-scale/min-max-suggested',
             'linear-scale/step-size'
           ]
-        }
+        },
+        {
+          title: 'Scriptable Options',
+          children: [
+            'scriptable/bar',
+            'scriptable/bubble',
+            'scriptable/pie',
+            'scriptable/line',
+            'scriptable/polar',
+            'scriptable/radar',
+          ]
+        },
+        {
+          title: 'Advanced',
+          children: [
+            'advanced/derived-axis-type',
+            'advanced/derived-chart-type',
+          ]
+        },
       ],
       '/': [
         '',
